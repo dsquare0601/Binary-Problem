@@ -1,2 +1,3 @@
 # Binary-Problem
- Javascript code to solve the given problem.
+
+<img src="Problem.jpg" alt="Problem-IMG" />
