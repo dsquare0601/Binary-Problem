@@ -2,12 +2,10 @@
 function solution(N) {
     let binaryData = N.toString(2);
     let position = binaryData.indexOf("0");
-    let count = 0;
-    let countArray = [];
-    let finalValue = 0;
+    let count = 0, finalValue = 0, countArray = [];
 
-    console.log(N);
-    console.log(binaryData);
+    console.log("Decimal : " + N);
+    console.log("Binary : " + binaryData);
     if (position < 0) {
         console.log(0);
     } else {
@@ -21,12 +19,10 @@ function solution(N) {
         }
 
         for (let max in countArray) {
-            if (finalValue < countArray[max]) {
-                finalValue = countArray[max];
-            }
+            finalValue < countArray[max] ? finalValue = countArray[max] : null;
         }
         console.log(finalValue)
     }
 }
 
-solution(1041);
+solution(35076);
